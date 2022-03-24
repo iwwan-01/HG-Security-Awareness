@@ -12,11 +12,8 @@ public class PasswordChecker : MonoBehaviour
      public void CheckPassword()
     {
         string PasswordString = passwordInputField.text;
-        if(PasswordString.Any(char.IsDigit) && PasswordString.Any(char.IsUpper) && PasswordString.Any(char.IsSymbol) || PasswordString.Any(char.IsPunctuation) && PasswordString.Any(char.IsLetter) && PasswordString.Length > 8){
-            buttonText.SetText("Your Password is ok");
-            
-        }
-        else if(PasswordString.Length < 8){
+       
+        if(PasswordString.Length < 8){
             buttonText.SetText("Your password is too short");
             
         }
@@ -32,9 +29,12 @@ public class PasswordChecker : MonoBehaviour
             buttonText.SetText("Your password must contain an uppercase letter");
             
         }
-        else if(!PasswordString.Any(char.IsSymbol) || !PasswordString.Any(char.IsPunctuation)){
+        else if(!PasswordString.Any(char.IsSymbol) && !PasswordString.Any(char.IsPunctuation)){
             buttonText.SetText("Your password must contain a symbol");
             
+        }
+        else{
+            buttonText.SetText("Your password is ok");
         }
        
         
