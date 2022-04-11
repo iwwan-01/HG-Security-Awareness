@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/RealEmail.unity
     guid: 0badee0f49a2a674fb4f7685c58425b5
   - enabled: 1
+    path: Assets/Scenes/FakeEmail.unity
+    guid: ee64f8e6c8b41eb4fba66a93aa7a96a4
+  - enabled: 1
     path: Assets/Scenes/ChangePassword.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
