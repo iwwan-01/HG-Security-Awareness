@@ -14,12 +14,12 @@ public class MouseOverTest : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     }
      
     public void OnPointerEnter(PointerEventData eventData){
-        popupboxanimator.SetBool("pop", true);
         mouseOver = true;
+        popupboxanimator.SetBool("pop", true);
         Debug.Log("Mouse enter");
     }
     public void OnPointerExit(PointerEventData eventData){
-        mouseOver =false;
+        mouseOver = false;
         popupboxanimator.SetBool("pop", false);
         Debug.Log("MouseExit");
     }
