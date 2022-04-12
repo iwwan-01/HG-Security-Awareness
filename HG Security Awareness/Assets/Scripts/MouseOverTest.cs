@@ -5,13 +5,13 @@ using UnityEngine.EventSystems;
 
 public class MouseOverTest : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    public bool mouseOver = false;
+    public bool mouseOver;
     public Animator popupboxanimator;
-    void Update(){
-        if(mouseOver == false){
-            popupboxanimator.SetBool("pop", false);
-        }
-    }
+    // void Update(){
+    //     if(mouseOver == false){
+    //         popupboxanimator.SetBool("pop", false);
+    //     }
+    // }
      
     public void OnPointerEnter(PointerEventData eventData){
         mouseOver = true;
