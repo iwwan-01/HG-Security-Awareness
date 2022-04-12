@@ -24,7 +24,7 @@ public class Starting : MonoBehaviour
 
     public void FakePasswordChange()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
 
     public void GoBackFromFakeToInbox()
