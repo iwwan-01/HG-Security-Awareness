@@ -14,27 +14,27 @@ public class PasswordChecker : MonoBehaviour
         string PasswordString = passwordInputField.text;
        
         if(PasswordString.Length < 8){
-            buttonText.SetText("Your password is too short");
+            buttonText.SetText("Your password is too short!");
             
         }
         else if(!PasswordString.Any(char.IsDigit)){
-            buttonText.SetText("Your password must contain a digit");
+            buttonText.SetText("Your password must contain a digit!");
             
         }
          else if(!PasswordString.Any(char.IsLetter)){
-            buttonText.SetText("Your password must contain a letter");
+            buttonText.SetText("Your password must contain a letter!");
            
         }
         else if(!PasswordString.Any(char.IsUpper)){
-            buttonText.SetText("Your password must contain an uppercase letter");
+            buttonText.SetText("Your password must contain an uppercase letter!");
             
         }
         else if(!PasswordString.Any(char.IsSymbol) && !PasswordString.Any(char.IsPunctuation)){
-            buttonText.SetText("Your password must contain a symbol");
+            buttonText.SetText("Your password must contain a symbol!");
             
         }
         else{
-            buttonText.SetText("Your password is ok");
+            buttonText.SetText("Your password meets all the requriements!");
         }
        
         
