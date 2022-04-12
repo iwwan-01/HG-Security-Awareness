@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class MouseOverTest : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    public bool mouseOver;
+    public bool hasPlayed;
     public Animator popupboxanimator;
     // void Update(){
     //     if(mouseOver == false){
@@ -14,12 +14,18 @@ public class MouseOverTest : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     // }
      
     public void OnPointerEnter(PointerEventData eventData){
-        mouseOver = true;
-        popupboxanimator.SetBool("pop", true);
-        Debug.Log("Mouse enter");
+
+        if (!hasPlayed)
+        {
+            hasPlayed = true;
+            popupboxanimator.SetBool("pop", true);
+            Debug.Log("Mouse enter");
+        }
+        else
+            return;
+
     }
     public void OnPointerExit(PointerEventData eventData){
-        mouseOver = false;
         popupboxanimator.SetBool("pop", false);
         Debug.Log("MouseExit");
     }
