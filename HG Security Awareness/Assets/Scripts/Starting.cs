@@ -7,34 +7,50 @@ using UnityEngine.SceneManagement;
 public class Starting : MonoBehaviour
 {
 
-    public void PlayGame()
+public float timeRemaining = 5;
+    public void ToStartingScreen()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("StartingScreen");
     }
 
-    public void WrongChoice()
+    public void ToMailBox()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        SceneManager.LoadScene("MailBox");
     }
 
-    public void RealPasswordChange()
+    public void ToFakeEmail()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+        SceneManager.LoadScene("FakeEmail");
     }
 
-    public void FakePasswordChange()
+    public void ToRealEmail()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        SceneManager.LoadScene("RealEmail");
     }
 
-    public void GoBackFromFakeToInbox()
+    public void ToFakeChangePassword()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+        SceneManager.LoadScene("FakeChangePassword");
     }
 
-    public void GoBackFromRealToInbox()
+    public void ToRealChangePassword()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene("RealChangePassword");
+    }
 
+    public void FromMailToInbox()
+    {
+        SceneManager.LoadScene("MailBox");
+
+    }
+
+    public void ToHacked()
+    {
+        SceneManager.LoadScene("Hacked");
+    }
+
+    public void Restart()
+    {
+            SceneManager.LoadScene("AssignmentPasswordSecurity");
     }
 }
