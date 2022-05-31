@@ -21,12 +21,12 @@ EditorBuildSettings:
     path: Assets/Scenes/FakeEmail.unity
     guid: ee64f8e6c8b41eb4fba66a93aa7a96a4
   - enabled: 1
-    path: Assets/Scenes/RealChangePassword.unity
+    path: Assets/Scenes/FakeChanger.unity
     guid: a006dd57882744248a1599779461295e
-  - enabled: 1
-    path: Assets/Scenes/FakeChangePassword.unity
-    guid: b20a3701c6342894e86727c90f2f768f
   - enabled: 1
     path: Assets/Scenes/Hacked.unity
     guid: ec441f4e4587e3448a0349e7de8b0c51
+  - enabled: 1
+    path: Assets/Scenes/RealChanger.unity
+    guid: 4acccc1c552ad794f851762bdbf20462
   m_configObjects: {}

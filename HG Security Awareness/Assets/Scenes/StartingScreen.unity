@@ -859,7 +859,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1012411096}
         m_TargetAssemblyTypeName: Starting, Assembly-CSharp
-        m_MethodName: PlayGame
+        m_MethodName: Mailbox
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

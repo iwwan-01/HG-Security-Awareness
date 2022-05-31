@@ -334,7 +334,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1818152775}
         m_TargetAssemblyTypeName: Starting, Assembly-CSharp
-        m_MethodName: FakePasswordChange
+        m_MethodName: FakeChanger
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -546,7 +546,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1818152775}
         m_TargetAssemblyTypeName: Starting, Assembly-CSharp
-        m_MethodName: GoBackFromFakeToInbox
+        m_MethodName: Inbox
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -8,87 +8,50 @@ public class PasswordChecker : MonoBehaviour
 {
    public ButtonText buttonText;
    public InputField passwordInputField;
-    public Text lengthtext;
-    public Text digittext;
-    public Text lettertext;
-    public Text uppercasetext;
-    public Text symboltext;
+    public Text lengthText;
+    public Text digitText;
+    public Text letterText;
+    public Text uppercaseText;
+    public Text symbolText;
 
-    // Update is called once per frame
-    //  public void CheckPassword()
-    // {
-    //     string PasswordString = passwordInputField.text;
-       
-    //     if(PasswordString.Length < 8){
-    //         buttonText.SetText("Your password is too short!");
-            
-    //     }
-    //     else if(!PasswordString.Any(char.IsDigit)){
-    //         buttonText.SetText("Your password must contain a digit!");
-            
-    //     }
-    //      else if(!PasswordString.Any(char.IsLetter)){
-    //         buttonText.SetText("Your password must contain a letter!");
-           
-    //     }
-    //     else if(!PasswordString.Any(char.IsUpper)){
-    //         buttonText.SetText("Your password must contain an uppercase letter!");
-            
-    //     }
-    //     else if(!PasswordString.Any(char.IsSymbol) && !PasswordString.Any(char.IsPunctuation)){
-    //         buttonText.SetText("Your password must contain a symbol!");
-            
-    //     }
-    //     else{
-    //         buttonText.SetText("Your password meets all the requriements!");
-    //     }
-       
-        
-    // }
+    
      private void Update() {
-        
         string PasswordString = passwordInputField.text;
-       
-        if(PasswordString.Length < 8){
-            //buttonText.SetText("Your password is too short!");
-            lengthtext.color = Color.grey;
-        }else{
-            lengthtext.color = Color.black;
+        if(PasswordString.Length > 8)
+        {
+
+            lengthText.color = Color.black;
+        }else
+        {
+            lengthText.color = Color.gray;
         }
-        if(!PasswordString.Any(char.IsDigit)){
-            //buttonText.SetText("Your password must contain a digit!");
-            digittext.color = Color.grey;
+        if(PasswordString.Any(char.IsDigit))
+        {
+            digitText.color = Color.black;
+        }else
+        {
+            digitText.color = Color.gray;
         }
-        else{
-            digittext.color = Color.black;
+        if(PasswordString.Any(char.IsLetter))
+        {
+            letterText.color = Color.black;
+        }else
+        {
+            letterText.color = Color.gray;
         }
-        if(!PasswordString.Any(char.IsLetter)){
-            //buttonText.SetText("Your password must contain a letter!");
-           lettertext.color = Color.grey;
+        if(PasswordString.Any(char.IsUpper))
+        {
+            uppercaseText.color = Color.black;
+        }else
+        {
+            uppercaseText.color = Color.gray;
         }
-        else{
-            lettertext.color = Color.black;
+        if(PasswordString.Any(char.IsSymbol) || PasswordString.Any(char.IsPunctuation))
+        {
+            symbolText.color = Color.black;
+        }else
+        {
+            symbolText.color = Color.gray;
         }
-        if(!PasswordString.Any(char.IsUpper)){
-            //buttonText.SetText("Your password must contain an uppercase letter!");
-            uppercasetext.color = Color.grey;
-        }
-        else{
-            uppercasetext.color = Color.black;
-        }
-        if(!PasswordString.Any(char.IsSymbol) && !PasswordString.Any(char.IsPunctuation)){
-            //buttonText.SetText("Your password must contain a symbol!");
-            symboltext.color = Color.grey;
-        }
-        else{
-            symboltext.color = Color.black;
-        }
-        
-        
-        
-        
-        // else{
-        //     buttonText.SetText("Your password meets all the requriements!");
-        // }
 }
 }
