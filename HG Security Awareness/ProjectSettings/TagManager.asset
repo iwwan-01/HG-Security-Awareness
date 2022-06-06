@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Laptop
+  - Cabinet1
+  - Cabinet2
+  - Cabinet3
   layers:
   - Default
   - TransparentFX

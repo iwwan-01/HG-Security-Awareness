@@ -1955,8 +1955,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonText: {fileID: 751000922}
   passwordInputField: {fileID: 1585956147}
-  lengthtext: {fileID: 1701064116}
-  digittext: {fileID: 2005794730}
-  lettertext: {fileID: 593224228}
-  uppercasetext: {fileID: 666366018}
-  symboltext: {fileID: 361641111}
+  lengthText: {fileID: 1701064116}
+  digitText: {fileID: 2005794730}
+  letterText: {fileID: 593224228}
+  uppercaseText: {fileID: 666366018}
+  symbolText: {fileID: 361641111}
