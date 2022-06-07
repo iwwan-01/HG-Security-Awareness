@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class Starting : MonoBehaviour
 {
 
-public float timeRemaining = 5;
     public void ToStartingScreen()
     {
         SceneManager.LoadScene("StartingScreen");
