@@ -13,13 +13,13 @@ public class PasswordChecker : MonoBehaviour
     public Text letterText;
     public Text uppercaseText;
     public Text symbolText;
+    public GameObject slider;
 
     
      private void Update() {
         string PasswordString = passwordInputField.text;
         if(PasswordString.Length > 8)
         {
-
             lengthText.color = Color.black;
         }else
         {
