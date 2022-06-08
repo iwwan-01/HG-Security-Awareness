@@ -7,49 +7,32 @@ using UnityEngine.SceneManagement;
 public class Starting : MonoBehaviour
 {
 
-    public void ToStartingScreen()
+    public void PlayGame()
     {
         SceneManager.LoadScene("StartingScreen");
     }
-
-    public void ToMailBox()
+    public void Mailbox()
     {
-        SceneManager.LoadScene("MailBox");
+        SceneManager.LoadScene("Mailbox");
     }
-
-    public void ToFakeEmail()
-    {
-        SceneManager.LoadScene("FakeEmail");
-    }
-
-    public void ToRealEmail()
+    public void RightChoice()
     {
         SceneManager.LoadScene("RealEmail");
     }
-
-    public void ToFakeChangePassword()
-    {
-        SceneManager.LoadScene("FakeChangePassword");
+    public void WrongChoice(){
+        SceneManager.LoadScene("FakeEmail");
     }
-
-    public void ToRealChangePassword()
-    {
-        SceneManager.LoadScene("RealChangePassword");
+    public void Inbox(){
+        SceneManager.LoadScene("Mailbox");
     }
-
-    public void FromMailToInbox()
-    {
-        SceneManager.LoadScene("MailBox");
-
+    public void RealChanger(){
+        SceneManager.LoadScene("RealChanger");
     }
-
-    public void ToHacked()
-    {
+    public void FakeChanger(){
+        SceneManager.LoadScene("FakeChanger");
+    }
+    public void Hacked(){
         SceneManager.LoadScene("Hacked");
     }
 
-    public void Restart()
-    {
-            SceneManager.LoadScene("AssignmentPasswordSecurity");
-    }
 }
