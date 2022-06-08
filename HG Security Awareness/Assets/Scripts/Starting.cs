@@ -9,30 +9,52 @@ public class Starting : MonoBehaviour
 
     public void PlayGame()
     {
+        SceneManager.LoadScene("AssignmentPasswordSecurity");
+    }
+
+    public void ToStartingScreen()
+    {
         SceneManager.LoadScene("StartingScreen");
     }
-    public void Mailbox()
+
+    public void ToMailBox()
     {
-        SceneManager.LoadScene("Mailbox");
+        SceneManager.LoadScene("MailBox");
     }
-    public void RightChoice()
+
+    public void ToFakeEmail()
+    {
+        SceneManager.LoadScene("FakeEmail");
+    }
+
+    public void ToRealEmail()
     {
         SceneManager.LoadScene("RealEmail");
     }
-    public void WrongChoice(){
-        SceneManager.LoadScene("FakeEmail");
+
+    public void ToFakeChangePassword()
+    {
+        SceneManager.LoadScene("FakeChangePassword");
     }
-    public void Inbox(){
-        SceneManager.LoadScene("Mailbox");
+
+    public void ToRealChangePassword()
+    {
+        SceneManager.LoadScene("RealChangePassword");
     }
-    public void RealChanger(){
-        SceneManager.LoadScene("RealChanger");
+
+    public void FromMailToInbox()
+    {
+        SceneManager.LoadScene("MailBox");
+
     }
-    public void FakeChanger(){
-        SceneManager.LoadScene("FakeChanger");
-    }
-    public void Hacked(){
+
+    public void ToHacked()
+    {
         SceneManager.LoadScene("Hacked");
     }
 
+    public void Restart()
+    {
+        SceneManager.LoadScene("AssignmentPasswordSecurity");
+    }
 }
