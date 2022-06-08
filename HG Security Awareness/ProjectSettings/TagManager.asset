@@ -8,6 +8,7 @@ TagManager:
   - Cabinet1
   - Cabinet2
   - Cabinet3
+  - Tablet
   layers:
   - Default
   - TransparentFX

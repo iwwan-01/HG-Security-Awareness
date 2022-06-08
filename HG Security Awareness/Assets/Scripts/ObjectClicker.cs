@@ -8,6 +8,7 @@ public class ObjectClicker : MonoBehaviour
     public Animator cabinetAnimator;
     public Animator secondCabinetAnimator;
     public Animator lastCabinetAnimator;
+    public Animator tabletAnimator;
     // Update is called once per frame
     void Update()
     {
@@ -38,6 +39,10 @@ public class ObjectClicker : MonoBehaviour
                         lastCabinetAnimator.SetBool("isclosed", true);
                         lastCabinetAnimator.SetBool("isopened", false);
                     }
+                    if(hit.collider.tag == "Tablet"){
+                        tabletAnimator.SetBool("tabletclicked", true);
+                        tabletAnimator.SetBool("tabletclosed", false);
+                    }
                 }
             }
         }
@@ -60,6 +65,10 @@ public class ObjectClicker : MonoBehaviour
                     if(hit.collider.tag == "Cabinet3"){
                         lastCabinetAnimator.SetBool("isopened", true);
                         lastCabinetAnimator.SetBool("isclosed", false);
+                    }
+                    if(hit.collider.tag == "Tablet"){
+                        tabletAnimator.SetBool("tabletclosed", true);
+                        tabletAnimator.SetBool("tabletclicked", false);
                     }
                 }
             }
