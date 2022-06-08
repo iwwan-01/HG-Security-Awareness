@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 933707181}
   - component: {fileID: 933707180}
   m_Layer: 5
-  m_Name: Inbox Button
+  m_Name: Button (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -251,7 +251,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1818152775}
         m_TargetAssemblyTypeName: Starting, Assembly-CSharp
-        m_MethodName: Inbox
+        m_MethodName: FromMailToInbox
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -467,7 +467,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1818152775}
         m_TargetAssemblyTypeName: Starting, Assembly-CSharp
-        m_MethodName: RealChanger
+        m_MethodName: ToRealChangePassword
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -651,7 +651,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 37d13b64d0c275c41b140be5fb5c8258, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6180b772a8f8b714c8c5aa194a8c8538, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
