@@ -34,5 +34,8 @@ public class Starting : MonoBehaviour
     public void Hacked(){
         SceneManager.LoadScene("Hacked");
     }
+    public void InternetExplorer(){
+        SceneManager.LoadScene("InternetExplorer");
+    }
 
 }
