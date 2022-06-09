@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class Starting : MonoBehaviour
 {
-
     public void PlayGame()
     {
         SceneManager.LoadScene("AssignmentPasswordSecurity");
@@ -56,5 +55,21 @@ public class Starting : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene("AssignmentPasswordSecurity");
+    }
+
+    public void ToOptionsMenu()
+    {
+        SceneManager.LoadScene("OptionsMenu");
+    }
+
+    public void ToStartMenu()
+    {
+        SceneManager.LoadScene("StartMenu");
+    }
+
+    public void QuitGame()
+    {
+        Debug.Log("Quiting game...");
+        Application.Quit();
     }
 }

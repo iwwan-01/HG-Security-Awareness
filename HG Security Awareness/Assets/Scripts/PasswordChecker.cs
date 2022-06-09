@@ -14,6 +14,7 @@ public class PasswordChecker : MonoBehaviour
     public Text uppercaseText;
     public Text symbolText;
     public GameObject slider;
+    public Color color;
 
     
      private void Update() {
