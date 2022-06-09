@@ -8,6 +8,7 @@ public class ObjectClicker : MonoBehaviour
     public Animator cabinetAnimator;
     public Animator secondCabinetAnimator;
     public Animator lastCabinetAnimator;
+    public GameObject Canvas1;
     // Update is called once per frame
     void Update()
     {
@@ -16,8 +17,10 @@ public class ObjectClicker : MonoBehaviour
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if(Physics.Raycast(ray, out hit, 100.0f))
+                Canvas1.gameObject.SetActive(true);
+
             {
-                if(hit.collider != null)
+                if (hit.collider != null)
                 {
                     if(hit.collider.tag == "Laptop"){
                         Debug.Log("You clicked on laptop");
