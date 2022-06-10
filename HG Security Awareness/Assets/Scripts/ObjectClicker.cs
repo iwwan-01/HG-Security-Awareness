@@ -8,7 +8,7 @@ public class ObjectClicker : MonoBehaviour
     public Animator cabinetAnimator;
     public Animator secondCabinetAnimator;
     public Animator lastCabinetAnimator;
-    public Animator tabletAnimator;
+    public GameObject Canvas1;
     // Update is called once per frame
     void Update()
     {
@@ -17,12 +17,15 @@ public class ObjectClicker : MonoBehaviour
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if(Physics.Raycast(ray, out hit, 100.0f))
+                Canvas1.gameObject.SetActive(true);
+
             {
-                if(hit.collider != null)
+                if (hit.collider != null)
                 {
                     if(hit.collider.tag == "Laptop"){
                         Debug.Log("You clicked on laptop");
                         cameraAnimator.SetBool("laptopclick", true);
+                        Canvas1.gameObject.SetActive(false);
                     }
                     if(hit.collider.tag == "Cabinet1"){
                         Debug.Log("You clicked on the first cabinet");
@@ -38,10 +41,6 @@ public class ObjectClicker : MonoBehaviour
                         Debug.Log("You clicked on the second cabinet");
                         lastCabinetAnimator.SetBool("isclosed", true);
                         lastCabinetAnimator.SetBool("isopened", false);
-                    }
-                    if(hit.collider.tag == "Tablet"){
-                        tabletAnimator.SetBool("tabletclicked", true);
-                        tabletAnimator.SetBool("tabletclosed", false);
                     }
                 }
             }
@@ -65,10 +64,6 @@ public class ObjectClicker : MonoBehaviour
                     if(hit.collider.tag == "Cabinet3"){
                         lastCabinetAnimator.SetBool("isopened", true);
                         lastCabinetAnimator.SetBool("isclosed", false);
-                    }
-                    if(hit.collider.tag == "Tablet"){
-                        tabletAnimator.SetBool("tabletclosed", true);
-                        tabletAnimator.SetBool("tabletclicked", false);
                     }
                 }
             }
