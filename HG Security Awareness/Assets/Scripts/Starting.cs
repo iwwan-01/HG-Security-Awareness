@@ -51,6 +51,9 @@ public class Starting : MonoBehaviour
     {
         SceneManager.LoadScene("Hacked");
     }
+    public void InternetExplorer(){
+        SceneManager.LoadScene("InternetExplorer");
+    }
 
     public void Restart()
     {
