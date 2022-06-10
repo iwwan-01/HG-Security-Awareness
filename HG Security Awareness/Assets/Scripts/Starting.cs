@@ -72,4 +72,8 @@ public class Starting : MonoBehaviour
         Debug.Log("Quiting game...");
         Application.Quit();
     }
+    public void ToInternetExplorer()
+    {
+        SceneManager.LoadScene("InternetExplorer");    
+    }
 }
