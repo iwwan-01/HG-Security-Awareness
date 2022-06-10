@@ -8,7 +8,7 @@ public class Starting : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("AssignmentPasswordSecurity");
+        SceneManager.LoadScene("StartingScreen");
     }
 
     public void ToStartingScreen()
