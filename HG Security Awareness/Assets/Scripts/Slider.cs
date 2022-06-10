@@ -11,7 +11,12 @@ public class Slider : MonoBehaviour
     public float green;
     public Color sliderColor;
 
-    public void UpdateRed(float newRed)
+      public void Awake()
+    {
+        slider = GetComponent<Slider>();
+    }
+
+        public void UpdateRed(float newRed)
     {
         red = newRed;
         UpdateSliderColor();

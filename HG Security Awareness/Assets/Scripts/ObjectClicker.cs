@@ -25,6 +25,7 @@ public class ObjectClicker : MonoBehaviour
                     if(hit.collider.tag == "Laptop"){
                         Debug.Log("You clicked on laptop");
                         cameraAnimator.SetBool("laptopclick", true);
+                        Canvas1.gameObject.SetActive(false);
                     }
                     if(hit.collider.tag == "Cabinet1"){
                         Debug.Log("You clicked on the first cabinet");
