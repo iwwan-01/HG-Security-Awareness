@@ -2152,6 +2152,7 @@ MonoBehaviour:
   cabinetAnimator: {fileID: 652205500}
   secondCabinetAnimator: {fileID: 690697388}
   lastCabinetAnimator: {fileID: 1914007544}
+  Canvas1: {fileID: 0}
 --- !u!114 &1659765145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2667,6 +2668,7 @@ GameObject:
   - component: {fileID: 1952553656}
   - component: {fileID: 1952553655}
   - component: {fileID: 1952553654}
+  - component: {fileID: 1952553657}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -2788,6 +2790,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1952553652}
   m_CullTransparentMesh: 1
+--- !u!114 &1952553657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952553652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.6156863}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1001 &1963893602
 PrefabInstance:
   m_ObjectHideFlags: 0
