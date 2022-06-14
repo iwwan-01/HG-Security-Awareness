@@ -505,7 +505,7 @@ GameObject:
   - component: {fileID: 143843330}
   - component: {fileID: 143843329}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Coffee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -581,12 +581,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143843328}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1532.3297, y: 471.6769, z: -8.4744}
-  m_LocalScale: {x: 0.125, y: 0.015209686, z: 0.125}
+  m_LocalRotation: {x: 0.29799566, y: -0.6412477, z: -0.6412477, w: 0.29799566}
+  m_LocalPosition: {x: 0.00017084592, y: 0.000047522783, z: 0.007183838}
+  m_LocalScale: {x: 0.025, y: 0.0030419372, z: 0.025}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_Father: {fileID: 1474872208}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &176068432
 PrefabInstance:
@@ -3051,6 +3051,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d030028f76aefa642a8461769890d413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1474872208 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7e1533d2ef1c0a14ba8f33482be6aea4, type: 3}
+  m_PrefabInstance: {fileID: 924075054}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1480064610
 GameObject:
   m_ObjectHideFlags: 0
