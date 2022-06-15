@@ -6,23 +6,30 @@ using System.Linq;
 
 public class PasswordChecker : MonoBehaviour
 {
-   public ButtonText buttonText;
-   public InputField passwordInputField;
+    public ButtonText buttonText;
+    public InputField passwordInputField;
+    
+    #region Object reference to the live time updated requirements
     public Text lengthText;
     public Text digitText;
     public Text letterText;
     public Text uppercaseText;
     public Text symbolText;
+    #endregion
+    
     public GameObject slider;
     public Color color;
     public Animator PasswordSliderAnimator;
-    public int Length = 0;
-    public int Digit = 0;
-    public int Letter = 0;
-    public int Uppercase = 0;
-    public int Symbol = 0;
-    public int PasswordStrength;
     
+    
+    #region Variables for Password Strength Meter
+    private int Length = 0;
+    private int Digit = 0;
+    private int Letter = 0;
+    private int Uppercase = 0;
+    private int Symbol = 0;
+    public int PasswordStrength;
+    #endregion
 
     
      private void Update() {
@@ -77,16 +84,20 @@ public class PasswordChecker : MonoBehaviour
             PasswordSliderAnimator.SetBool("PassWeak", true);
         }else{
             PasswordSliderAnimator.SetBool("PassWeak", false);
+            
         }
         if(PasswordStrength >= 4){
             PasswordSliderAnimator.SetBool("PassAverage", true);
         }else{
             PasswordSliderAnimator.SetBool("PassAverage", false);
+            
         }
         if(PasswordStrength == 5){
             PasswordSliderAnimator.SetBool("PassStrong", true);
+            
         }else{
             PasswordSliderAnimator.SetBool("PassStrong", false);
+            
         }
 
 }
