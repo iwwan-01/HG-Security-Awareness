@@ -18,7 +18,7 @@ public class ObjectClicker : MonoBehaviour
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if(Physics.Raycast(ray, out hit, 100.0f))
-                Canvas1.gameObject.SetActive(true);
+                //Canvas1.gameObject.SetActive(true);
 
             {
                 if (hit.collider != null)
