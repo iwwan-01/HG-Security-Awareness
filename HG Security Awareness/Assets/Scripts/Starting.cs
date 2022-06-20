@@ -76,4 +76,8 @@ public class Starting : MonoBehaviour
     {
         SceneManager.LoadScene("InternetExplorer");    
     }
+    public void ToScruMaster()
+    {
+        SceneManager.LoadScene("ScrumMaster");
+    }
 }
