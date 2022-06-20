@@ -1842,6 +1842,7 @@ GameObject:
   - component: {fileID: 1185966283}
   - component: {fileID: 1185966282}
   - component: {fileID: 1185966281}
+  - component: {fileID: 1185966284}
   m_Layer: 0
   m_Name: VolumeManager
   m_TagString: Untagged
@@ -1859,11 +1860,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 854596601899eaf419fb9a0ce67b7b5e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 56048ca953c04d742b4c8abb220a426f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1971,6 +1972,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1185966284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185966280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b862452a6f92c6c4c89d76e0ee4963ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1299249140
 GameObject:
   m_ObjectHideFlags: 0
@@ -2588,6 +2601,7 @@ MonoBehaviour:
   cabinetAnimator: {fileID: 652205500}
   secondCabinetAnimator: {fileID: 690697388}
   lastCabinetAnimator: {fileID: 1914007544}
+  tabletAnimator: {fileID: 0}
   Canvas1: {fileID: 0}
 --- !u!114 &1659765145
 MonoBehaviour:
