@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class VolumeChanger : MonoBehaviour
 {
     private AudioSource AudioSrc;
+    private GameObject VolumeSlider;
 
     private float AudioVolume = 1f;
 
