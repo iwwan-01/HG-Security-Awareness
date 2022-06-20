@@ -5,9 +5,29 @@ using UnityEngine.SceneManagement;
 
 public class SaveSystem : MonoBehaviour
 {
+    static SaveSystem instance;
     // Update is called once per frame
-
+    private bool firstStart = true;
     void Awake()
+    {
+        if (firstStart) 
+        {
+            AssignBooleans();
+            firstStart = false;
+        }
+
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    void AssignBooleans()
     {
         SaveBooleans.IsFirstAssignment = true;
         SaveBooleans.IsFirstAttempt = true;
@@ -18,6 +38,9 @@ public class SaveSystem : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(SaveBooleans.IsFirstAttempt);
+        Debug.Log(SaveBooleans.IsSuccessful);
+        Debug.Log(SaveBooleans.IsFirstAssignment);
         #region The function for the first level of the game
         if (SaveBooleans.IsFirstAssignment)
         {

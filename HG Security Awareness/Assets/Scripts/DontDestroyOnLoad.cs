@@ -5,6 +5,7 @@ using UnityEngine;
 public class DontDestroyOnLoad : MonoBehaviour
 {
     static DontDestroyOnLoad instance;
+    
     private void Awake() {
         if(instance == null){
             instance = this;
