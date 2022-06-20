@@ -38,11 +38,11 @@ public class TabletUpdate : MonoBehaviour
         {
             if (!SaveBooleans.IsFirstAttempt)
             {
-                if (SaveBooleans.IsSuccessful ?? true)
+                if (SaveBooleans.IsSuccessful == true)
                 {
                     tabletRenderer.material = secondAttemptImage;
                 }
-                else if (SaveBooleans.IsSuccessful ?? false)
+                else if (SaveBooleans.IsSuccessful == false)
                 {
                     tabletRenderer.material = finalAttemptImage;
                 }
