@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ShowPasswordRequirements : MonoBehaviour
 {
-    [SerializeField]
     public GameObject passwordRequirements;
 
 
@@ -18,5 +17,7 @@ public class ShowPasswordRequirements : MonoBehaviour
         {
             passwordRequirements.SetActive(false);
         }
+
+        Debug.Log(SaveBooleans.IsFirstAttempt);
     }
 }
