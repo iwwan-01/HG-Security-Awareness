@@ -10,7 +10,7 @@ public class ObjectClicker : MonoBehaviour
     public Animator lastCabinetAnimator;
     public Animator tabletAnimator;
     public Animator cardAnimator;
-    public GameObject Canvas1;
+    //public GameObject Canvas1;
     // Update is called once per frame
     void Update()
     {
@@ -27,7 +27,7 @@ public class ObjectClicker : MonoBehaviour
                     if(hit.collider.tag == "Laptop"){
                         Debug.Log("You clicked on laptop");
                         cameraAnimator.SetBool("laptopclick", true);
-                        Canvas1.gameObject.SetActive(false);
+                        //Canvas1.gameObject.SetActive(false);
                     }
                     if(hit.collider.tag == "Cabinet1"){
                         Debug.Log("You clicked on the first cabinet");

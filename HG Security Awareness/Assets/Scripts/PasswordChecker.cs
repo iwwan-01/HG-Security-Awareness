@@ -8,6 +8,8 @@ public class PasswordChecker : MonoBehaviour
 {
     public ButtonText buttonText;
     public InputField passwordInputField;
+    public InputField referenceInput;
+    public Image checkMarkImage;
     
     #region Object reference to the live time updated requirements
     public Text lengthText;
@@ -98,6 +100,11 @@ public class PasswordChecker : MonoBehaviour
         }else{
             PasswordSliderAnimator.SetBool("PassStrong", false);
             
+        }
+        if(referenceInput.text == "413669"){
+            checkMarkImage.gameObject.SetActive(true);
+        }else{
+            checkMarkImage.gameObject.SetActive(false);
         }
 
 }

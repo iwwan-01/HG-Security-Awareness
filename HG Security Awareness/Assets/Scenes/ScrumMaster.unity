@@ -761,8 +761,6 @@ GameObject:
   - component: {fileID: 405433157}
   - component: {fileID: 405433161}
   - component: {fileID: 405433162}
-  - component: {fileID: 405433163}
-  - component: {fileID: 405433164}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -860,6 +858,7 @@ RectTransform:
   - {fileID: 2047712890}
   - {fileID: 2018826936}
   - {fileID: 1559838947}
+  - {fileID: 1429320359}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -894,6 +893,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonText: {fileID: 0}
   passwordInputField: {fileID: 308537747}
+  referenceInput: {fileID: 771362737}
+  checkMarkImage: {fileID: 1429320360}
   lengthText: {fileID: 2047712895}
   digitText: {fileID: 2047712894}
   letterText: {fileID: 2047712893}
@@ -903,36 +904,6 @@ MonoBehaviour:
   color: {r: 0, g: 0, b: 0, a: 0}
   PasswordSliderAnimator: {fileID: 2018826937}
   PasswordStrength: 0
---- !u!114 &405433163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 405433156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 290e1b1551cbfbc43a5601456adac791, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &405433164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 405433156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff14943aac7cbb34c8ab685545b57254, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  passwordRequirements: {fileID: 504120969}
---- !u!1 &504120969 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8732475575933731127, guid: c4871bf9199088a4789913712013c661, type: 3}
-  m_PrefabInstance: {fileID: 2047712889}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &542531754
 GameObject:
   m_ObjectHideFlags: 0
@@ -1587,7 +1558,6 @@ GameObject:
   - component: {fileID: 849665322}
   - component: {fileID: 849665321}
   - component: {fileID: 849665320}
-  - component: {fileID: 849665323}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1659,9 +1629,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 849665323}
-        m_TargetAssemblyTypeName: SignUpButton, Assembly-CSharp
-        m_MethodName: OnButtonPressed
+      - m_Target: {fileID: 405433161}
+        m_TargetAssemblyTypeName: Starting, Assembly-CSharp
+        m_MethodName: ToAccountCreated
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1709,18 +1679,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 849665318}
   m_CullTransparentMesh: 1
---- !u!114 &849665323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 849665318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 290e1b1551cbfbc43a5601456adac791, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &950839671
 GameObject:
   m_ObjectHideFlags: 0
@@ -2198,6 +2156,81 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1429320358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1429320359}
+  - component: {fileID: 1429320361}
+  - component: {fileID: 1429320360}
+  m_Layer: 5
+  m_Name: CheckmarkImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1429320359
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429320358}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 405433160}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 463.8, y: -191.31}
+  m_SizeDelta: {x: 85.114, y: 77.125}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1429320360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429320358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1429320361
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429320358}
+  m_CullTransparentMesh: 1
 --- !u!1 &1485322166
 GameObject:
   m_ObjectHideFlags: 0
@@ -3488,7 +3521,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8732475575933731127, guid: c4871bf9199088a4789913712013c661, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8732475575976435084, guid: c4871bf9199088a4789913712013c661, type: 3}
       propertyPath: m_FontData.m_Font
