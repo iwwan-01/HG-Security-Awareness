@@ -9,6 +9,7 @@ public class ObjectClicker : MonoBehaviour
     public Animator secondCabinetAnimator;
     public Animator lastCabinetAnimator;
     public Animator tabletAnimator;
+    public Animator cardAnimator;
     public GameObject Canvas1;
     // Update is called once per frame
     void Update()
@@ -47,8 +48,15 @@ public class ObjectClicker : MonoBehaviour
                         tabletAnimator.SetBool("tabletclicked", true);
                         tabletAnimator.SetBool("tabletclosed", false);
                     }
+                    if(hit.collider.tag == "Card"){
+                        Debug.Log("You clicked on the card");
+                        cardAnimator.SetBool("cardopen", true);
+                        cardAnimator.SetBool("cardclose", false);
+
+                    }
                 }
             }
+            
         }
         if(Input.GetMouseButtonDown(1))
         {
@@ -73,6 +81,10 @@ public class ObjectClicker : MonoBehaviour
                     if(hit.collider.tag == "Tablet"){
                         tabletAnimator.SetBool("tabletclosed", true);
                         tabletAnimator.SetBool("tabletclicked", false);
+                    }
+                    if(hit.collider.tag == "Card"){
+                        cardAnimator.SetBool("cardclose", true);
+                        cardAnimator.SetBool("cardopen", false);
                     }
                 }
             }
