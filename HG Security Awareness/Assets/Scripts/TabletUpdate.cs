@@ -26,12 +26,12 @@ public class TabletUpdate : MonoBehaviour
         // IT WORKS!!!
         if (SaveBooleans.IsStrong == false)
         {
-            SaveBooleans.IsSuccessful = false;
+            //SaveBooleans.IsSuccessful = false;
             SaveBooleans.IsFirstAttempt = false;
         }
         else if (SaveBooleans.IsStrong == true)
         {
-            SaveBooleans.IsSuccessful = true;
+            //SaveBooleans.IsSuccessful = true;
             SaveBooleans.IsFirstAssignment = false;
         }
 
@@ -52,7 +52,7 @@ public class TabletUpdate : MonoBehaviour
         }
 
 
-        if(SaveBooleans.isSecondAttempt)
+        if(SaveBooleans.IsSecondAttempt)
         {
             tabletRenderer.material = finalAttemptImage;
         }

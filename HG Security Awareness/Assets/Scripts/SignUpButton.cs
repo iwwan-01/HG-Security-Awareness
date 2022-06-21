@@ -27,7 +27,7 @@ public class SignUpButton : MonoBehaviour
 
         if(passwordChecker.PasswordStrength < 5 && !SaveBooleans.IsFirstAttempt)
         {
-            SaveBooleans.isSecondAttempt = true;
+            SaveBooleans.IsSecondAttempt = true;
         }
     }
 }

@@ -6,7 +6,7 @@ public static class SaveBooleans
 {
     public static bool IsFirstAssignment { get; set; }
     public static bool IsFirstAttempt { get; set; }
-    public static bool isSecondAttempt { get; set; }
+    public static bool IsSecondAttempt { get; set; }
     public static bool? IsSuccessful { get; set; }
     public static bool? IsStrong { get; set; }
 }
