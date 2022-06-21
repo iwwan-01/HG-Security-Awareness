@@ -80,4 +80,7 @@ public class Starting : MonoBehaviour
     {
         SceneManager.LoadScene("ScrumMaster");
     }
+    public void ToMainScreen(){
+        SceneManager.LoadScene("MainScreen");
+    }
 }
