@@ -761,6 +761,7 @@ GameObject:
   - component: {fileID: 405433157}
   - component: {fileID: 405433161}
   - component: {fileID: 405433162}
+  - component: {fileID: 405433163}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -904,6 +905,19 @@ MonoBehaviour:
   color: {r: 0, g: 0, b: 0, a: 0}
   PasswordSliderAnimator: {fileID: 2018826937}
   PasswordStrength: 0
+--- !u!114 &405433163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405433156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff14943aac7cbb34c8ab685545b57254, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  passwordRequirements: {fileID: 2047712896}
 --- !u!1 &542531754
 GameObject:
   m_ObjectHideFlags: 0
@@ -3673,6 +3687,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2047712896 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8732475575933731127, guid: c4871bf9199088a4789913712013c661, type: 3}
+  m_PrefabInstance: {fileID: 2047712889}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2120999699
 GameObject:
   m_ObjectHideFlags: 0
