@@ -83,4 +83,7 @@ public class Starting : MonoBehaviour
     public void ToMainScreen(){
         SceneManager.LoadScene("MainScreen");
     }
+    public void ToAccountCreated(){
+        SceneManager.LoadScene("AccountCreated");
+    }
 }
