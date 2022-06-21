@@ -10,12 +10,6 @@ public class SaveSystem : MonoBehaviour
     private bool firstStart = true;
     void Awake()
     {
-        if (firstStart) 
-        {
-            AssignBooleans();
-            firstStart = false;
-        }
-
         if (instance == null)
         {
             instance = this;
@@ -24,6 +18,12 @@ public class SaveSystem : MonoBehaviour
         else if (instance != this)
         {
             Destroy(gameObject);
+        }
+
+        if (firstStart)
+        {
+            AssignBooleans();
+            firstStart = false;
         }
     }
 
@@ -46,7 +46,7 @@ public class SaveSystem : MonoBehaviour
         {
             if(SaveBooleans.IsFirstAttempt)
             {
-                if (SaveBooleans.IsSuccessful ?? true)
+                if (SaveBooleans.IsSuccessful == true)
                 {
                     //SceneManager.LoadScene(""); // Boss is happy, you can continue to the next assignment!
                 }
@@ -58,7 +58,7 @@ public class SaveSystem : MonoBehaviour
                 }
             } else if (!SaveBooleans.IsFirstAttempt)
             {
-                if(SaveBooleans.IsSuccessful ?? false) // CAN CAUSE SOME ISSUES!!!
+                if(SaveBooleans.IsSuccessful == false) // CAN CAUSE SOME ISSUES!!!
                 {
                     //SceneManager.LoadScene("") // Game Over!
                 }
